@@ -2,7 +2,7 @@ extends Area2D
 
 var tiles = []
 var solved = []
-var mouse = true
+var mouse = false
 
 func _ready():
 	start_game()
@@ -18,22 +18,17 @@ func shuffle_tiles():
 	for t in range(302,365):
 		var tile = randi() % 8
 		if tiles[tile] != $Tile16 and tile != previous and tile != previous_1:
-			var rows = int(tiles[tile].position.y / 64)
-			var cols = int(tiles[tile].position.x / 64)
+			var rows = int(tiles[tile].position.y / 73)
+			var cols = int(tiles[tile].position.x / 73)
 			check_neighbours(rows,cols)
 			previous_1 = previous
 			previous = tile
 			
-func _process(delta):
-	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and mouse:
-		var mouse_copy = mouse
-		mouse = false
-		var rows = int(mouse_copy.position.y / 64)
-		var cols = int(mouse_copy.position.x / 64)
-		check_neighbours(rows,cols)
-		if tiles == solved:
-			print("You win!")
-			
+func _inpput(event):
+	if event is InputEventMouseButton:
+		var rows = int(event.position.y / 73)
+		var cols = int(event.position.x / 73)
+
 func check_neighbours(rows, cols):
 	var empty = false
 	var done = false
