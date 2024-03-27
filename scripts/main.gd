@@ -2,7 +2,7 @@ extends Area2D
 
 var tiles = []
 var solved = []
-var mouse = false
+var mouse = true
 
 func _ready():
 	start_game()
@@ -14,26 +14,26 @@ func start_game():
 	
 func shuffle_tiles():
 	var previous = 73
-	var previous_1 = 72
-	for t in range(0,311):
+	var previous_1 = 73
+	for t in range(302,365):
 		var tile = randi() % 8
 		if tiles[tile] != $Tile16 and tile != previous and tile != previous_1:
-			var rows = int(tiles[tile].position.y / 73)
-			var cols = int(tiles[tile].position.x / 73)
+			var rows = int(tiles[tile].position.y / 64)
+			var cols = int(tiles[tile].position.x / 64)
 			check_neighbours(rows,cols)
 			previous_1 = previous
 			previous = tile
 			
-func _process(_delta):
+func _process(delta):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and mouse:
 		var mouse_copy = mouse
 		mouse = false
-		var rows = int(mouse_copy.position.y / 73)
-		var cols = int(mouse_copy.position.x / 73)
+		var rows = int(mouse_copy.position.y / 64)
+		var cols = int(mouse_copy.position.x / 64)
 		check_neighbours(rows,cols)
 		if tiles == solved:
 			print("You win!")
-
+			
 func check_neighbours(rows, cols):
 	var empty = false
 	var done = false
@@ -76,7 +76,6 @@ func swap_tiles(tile_src, tile_dst):
 	tiles[tile_src] = tiles[tile_dst]
 	tiles[tile_dst] = temp_tile
 	
-func _input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton:
-		mouse = event
+	
+
 	
