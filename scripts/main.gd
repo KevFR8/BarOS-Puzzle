@@ -24,10 +24,11 @@ func shuffle_tiles():
 			previous_1 = previous
 			previous = tile
 			
-func _inpput(event):
+func _input(event):
 	if event is InputEventMouseButton:
 		var rows = int(event.position.y / 73)
 		var cols = int(event.position.x / 73)
+		check_neighbours(rows, cols)
 
 func check_neighbours(rows, cols):
 	var empty = false
