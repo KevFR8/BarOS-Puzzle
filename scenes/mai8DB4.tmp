@@ -32,7 +32,7 @@ size = Vector2(330, 394)
 script = ExtResource("1_d7o8o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(821, 268)
+position = Vector2(155, 187)
 shape = SubResource("RectangleShape2D_uuyjn")
 
 [node name="HUD" type="Control" parent="."]
@@ -47,7 +47,7 @@ script = SubResource("GDScript_wmtro")
 [node name="ColorRect" type="ColorRect" parent="HUD"]
 layout_mode = 0
 offset_right = 311.0
-offset_bottom = 367.0
+offset_bottom = 376.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="HUD"]
 layout_mode = 0
@@ -62,15 +62,11 @@ text = "Puzzle"
 
 [node name="Button" type="Button" parent="HUD"]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 7.0
-offset_right = 32.0
-offset_bottom = 38.0
+offset_left = 15.0
+offset_top = 12.0
+offset_right = 37.0
+offset_bottom = 43.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
 action_mode = 0
 text = "i"
 flat = true
@@ -121,77 +117,75 @@ horizontal_alignment = 1
 stream = ExtResource("4_6bv8q")
 
 [node name="Tile1" type="Sprite2D" parent="."]
-position = Vector2(-382, 298)
+position = Vector2(46, 103)
 texture = ExtResource("1_m4p02")
 
 [node name="Tile2" type="Sprite2D" parent="."]
-position = Vector2(653, 466)
+position = Vector2(119, 103)
 texture = ExtResource("2_te210")
 
 [node name="Tile3" type="Sprite2D" parent="."]
-position = Vector2(380, 328)
+position = Vector2(192, 103)
 texture = ExtResource("3_70v4b")
 
 [node name="Tile4" type="Sprite2D" parent="."]
-position = Vector2(395, 138)
+position = Vector2(265, 103)
 texture = ExtResource("4_kcut0")
 
 [node name="Tile5" type="Sprite2D" parent="."]
-position = Vector2(-144, 364)
+position = Vector2(46, 176)
 texture = ExtResource("5_p5u1v")
 
 [node name="Tile6" type="Sprite2D" parent="."]
-position = Vector2(431, 398)
+position = Vector2(119, 176)
 texture = ExtResource("6_da70a")
 
 [node name="Tile7" type="Sprite2D" parent="."]
-position = Vector2(583, 419)
+position = Vector2(192, 176)
 texture = ExtResource("7_fhl0k")
 
 [node name="Tile8" type="Sprite2D" parent="."]
-position = Vector2(387, 226)
+position = Vector2(265, 176)
 texture = ExtResource("8_7jlcs")
 
 [node name="Tile9" type="Sprite2D" parent="."]
-position = Vector2(-48, 459)
+position = Vector2(46, 249)
 texture = ExtResource("9_ml3rp")
 
 [node name="Tile10" type="Sprite2D" parent="."]
-position = Vector2(167, 410)
+position = Vector2(119, 249)
 texture = ExtResource("10_mrr1a")
 
 [node name="Tile11" type="Sprite2D" parent="."]
-position = Vector2(389, 365)
+position = Vector2(192, 249)
 texture = ExtResource("11_48pb5")
 
 [node name="Tile12" type="Sprite2D" parent="."]
-position = Vector2(395, 325)
+position = Vector2(265, 249)
 texture = ExtResource("12_ronjh")
 
 [node name="Tile13" type="Sprite2D" parent="."]
-position = Vector2(49, 459)
+position = Vector2(46, 322)
 texture = ExtResource("13_thipm")
 
 [node name="Tile14" type="Sprite2D" parent="."]
-position = Vector2(130, 432)
+position = Vector2(119, 322)
 texture = ExtResource("14_7o80x")
 
 [node name="Tile15" type="Sprite2D" parent="."]
-position = Vector2(302, 464)
+position = Vector2(192, 322)
 texture = ExtResource("15_dfg0u")
 
 [node name="Tile16" type="Sprite2D" parent="."]
-position = Vector2(-158, 317)
-scale = Vector2(0.97, 1)
+position = Vector2(265, 322)
 texture = ExtResource("19_1peda")
 
 [node name="Gridlayout" type="Sprite2D" parent="."]
-position = Vector2(152, 173)
+position = Vector2(156, 184)
 texture = ExtResource("3_cnaku")
 
 [node name="Windowmask" type="Sprite2D" parent="."]
-position = Vector2(152.75, 179.375)
-scale = Vector2(1.01159, 0.982877)
+position = Vector2(156, 187)
 texture = ExtResource("2_5k7f5")
 
 [node name="Click" type="AudioStreamPlayer2D" parent="."]
