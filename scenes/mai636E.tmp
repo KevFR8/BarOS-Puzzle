@@ -132,16 +132,15 @@ position = Vector2(116, 112)
 texture = ExtResource("2_te210")
 
 [node name="Tile3" type="Sprite2D" parent="."]
-position = Vector2(189, 112)
+position = Vector2(380, 328)
 texture = ExtResource("3_70v4b")
 
 [node name="Tile4" type="Sprite2D" parent="."]
-position = Vector2(262, 111)
-scale = Vector2(1, 0.96875)
+position = Vector2(395, 138)
 texture = ExtResource("4_kcut0")
 
 [node name="Tile5" type="Sprite2D" parent="."]
-position = Vector2(43, 184)
+position = Vector2(-144, 364)
 texture = ExtResource("5_p5u1v")
 
 [node name="Tile6" type="Sprite2D" parent="."]
@@ -169,7 +168,7 @@ position = Vector2(389, 365)
 texture = ExtResource("11_48pb5")
 
 [node name="Tile12" type="Sprite2D" parent="."]
-position = Vector2(526, 247)
+position = Vector2(395, 325)
 texture = ExtResource("12_ronjh")
 
 [node name="Tile13" type="Sprite2D" parent="."]
