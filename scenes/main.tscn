@@ -92,34 +92,6 @@ size = Vector2i(311, 345)
 visible = false
 unresizable = true
 
-[node name="ColorRect" type="ColorRect" parent="Popup/About"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Label" type="Label" parent="Popup/About/ColorRect"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -117.0
-offset_top = -37.5
-offset_right = 117.0
-offset_bottom = 37.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("2_l30f6")
-theme_override_font_sizes/font_size = 30
-text = "Developper: KevFR
-Assets: Icoeye
-"
-horizontal_alignment = 1
-
 [node name="ClickButton" type="AudioStreamPlayer2D" parent="Popup"]
 stream = ExtResource("4_6bv8q")
 
@@ -185,6 +157,7 @@ position = Vector2(302, 464)
 texture = ExtResource("15_dfg0u")
 
 [node name="Tile16" type="Sprite2D" parent="."]
+<<<<<<< HEAD
 position = Vector2(262, 328)
 scale = Vector2(1, 1.01562)
 texture = ExtResource("19_1peda")
@@ -193,10 +166,20 @@ texture = ExtResource("19_1peda")
 position = Vector2(153, 192)
 texture = ExtResource("3_cnaku")
 
+=======
+position = Vector2(265, 319.5)
+scale = Vector2(1, 1.01563)
+texture = ExtResource("19_1peda")
+
+>>>>>>> parent of ac549a1 (change icon + attempt to fixes buges + about  update)
 [node name="Windowmask" type="Sprite2D" parent="."]
 position = Vector2(155.5, 187.5)
 scale = Vector2(1.0298, 1.0274)
 texture = ExtResource("2_5k7f5")
+
+[node name="Gridlayout" type="Sprite2D" parent="."]
+position = Vector2(156, 184)
+texture = ExtResource("3_cnaku")
 
 [node name="Click" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_6bv8q")

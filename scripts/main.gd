@@ -13,8 +13,8 @@ func start_game():
 	shuffle_tiles()
 	
 func shuffle_tiles():
-	var previous = 103
-	var previous_1 = 103
+	var previous = 73
+	var previous_1 = 73
 	for t in range(302,365):
 		var tile = randi() % 8
 		if tiles[tile] != $Tile16 and tile != previous and tile != previous_1:
@@ -26,12 +26,9 @@ func shuffle_tiles():
 			
 func _input(event):
 	if event is InputEventMouseButton:
-		var rows = int(event.position.y / 103)
-		var cols = int(event.position.x / 103)
-		$Click.play(0)
+		var rows = int(event.position.y / 73)
+		var cols = int(event.position.x / 73)
 		check_neighbours(rows, cols)
-		
-
 
 func check_neighbours(rows, cols):
 	var empty = false
@@ -66,8 +63,6 @@ func find_empty(position,pos):
 		return true
 	else:
 		return false
-
-
 		
 func swap_tiles(tile_src, tile_dst):
 	var temp_pos = tiles[tile_src].position
