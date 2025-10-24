@@ -1,0 +1,77 @@
+[gd_scene load_steps=11 format=3 uid="uid://bteeld3pfqmjx"]
+
+[ext_resource type="Texture2D" uid="uid://ceyuy1hps5q7u" path="res://assets/images/animation_ok.png" id="1_0g6et"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70lot"]
+atlas = ExtResource("1_0g6et")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uno6j"]
+atlas = ExtResource("1_0g6et")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecaho"]
+atlas = ExtResource("1_0g6et")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6s368"]
+atlas = ExtResource("1_0g6et")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lj18q"]
+atlas = ExtResource("1_0g6et")
+region = Rect2(0, 256, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mvnsb"]
+atlas = ExtResource("1_0g6et")
+region = Rect2(0, 320, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbu16"]
+atlas = ExtResource("1_0g6et")
+region = Rect2(0, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rx7t"]
+atlas = ExtResource("1_0g6et")
+region = Rect2(0, 448, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xubqg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70lot")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uno6j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecaho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6s368")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lj18q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mvnsb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbu16")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rx7t")
+}],
+"loop": false,
+"name": &"complete",
+"speed": 5.0
+}]
+
+[node name="CompleteAnimation" type="CanvasLayer"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(160, 192)
+scale = Vector2(1.375, 1.375)
+sprite_frames = SubResource("SpriteFrames_xubqg")
+animation = &"complete"
+frame = 7
+frame_progress = 1.0
