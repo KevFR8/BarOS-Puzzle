@@ -10,7 +10,7 @@ Based on the puzzle game from Bar OS system in the Progressbar 95 game, Bar OS P
 ## Credits
 - Developper: KevFR
 - Textures: Igor Uduslivii (alias Icoeye)
-- Composer (SFX): Gemfire
+
 
 
 
