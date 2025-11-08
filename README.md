@@ -1,4 +1,4 @@
-# Bar OS Puzzle
+# BarOS Puzzle
 ## Presentation 
 A fan game based on the puzzle mini-game from BarOS in Progressbar95.
 
