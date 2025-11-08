@@ -1,10 +1,11 @@
-[gd_scene load_steps=27 format=3 uid="uid://blcmu02sbktmt"]
+[gd_scene load_steps=28 format=3 uid="uid://blcmu02sbktmt"]
 
 [ext_resource type="Script" uid="uid://d23owejfcpslt" path="res://scripts/main.gd" id="1_d7o8o"]
 [ext_resource type="Texture2D" uid="uid://b0vcrjxy8i3hu" path="res://assets/images/tile1.png" id="1_m4p02"]
 [ext_resource type="Texture2D" uid="uid://bdu6o8dbaiwhm" path="res://assets/images/windowmask.png" id="2_5k7f5"]
 [ext_resource type="Script" uid="uid://l43jt56ehlac" path="res://scripts/Popup.gd" id="2_7ci0c"]
 [ext_resource type="FontFile" uid="uid://bgrabemodn8fm" path="res://assets/fonts/chis-pix.ttf" id="2_l30f6"]
+[ext_resource type="FontFile" uid="uid://bll5ebsfh8kxr" path="res://assets/fonts/chispix-bold.ttf" id="2_og1vs"]
 [ext_resource type="Texture2D" uid="uid://dennndlugfwnf" path="res://assets/images/tile2.png" id="2_te210"]
 [ext_resource type="Texture2D" uid="uid://c5tgaa34quhnl" path="res://assets/images/tile3.png" id="3_70v4b"]
 [ext_resource type="Texture2D" uid="uid://bg86yldbyclb6" path="res://assets/images/gridlayout.png" id="3_cnaku"]
@@ -55,15 +56,23 @@ offset_right = 311.0
 offset_bottom = 376.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="HUD"]
-layout_mode = 0
-offset_left = 118.0
-offset_top = 7.0
-offset_right = 429.0
-offset_bottom = 89.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 38.0
+offset_top = 16.0
+offset_right = 274.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("2_l30f6")
-theme_override_font_sizes/normal_font_size = 30
+theme_override_fonts/normal_font = ExtResource("2_og1vs")
+theme_override_font_sizes/normal_font_size = 20
 text = "Puzzle"
+horizontal_alignment = 1
 
 [node name="Button" type="TextureButton" parent="."]
 offset_left = 15.0
@@ -73,14 +82,13 @@ offset_bottom = 39.0
 texture_normal = ExtResource("3_y6deb")
 
 [node name="Popup" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("2_7ci0c")
 
 [node name="About" type="Window" parent="Popup"]
 mode = 2
-title = "About this game"
+title = "About "
 initial_position = 2
 size = Vector2i(311, 345)
 visible = false
@@ -101,17 +109,19 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -155.5
-offset_top = -56.5
+offset_top = -172.5
 offset_right = 155.5
-offset_bottom = 18.5
+offset_bottom = 172.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_l30f6")
 theme_override_font_sizes/font_size = 30
-text = "Developper: KevFR
-Assets: Icoeye"
+text = "BarOS Puzzle
+KevFR, Icoeye"
 horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_lock_ = true
 
 [node name="ClickButton" type="AudioStreamPlayer2D" parent="Popup"]
 stream = ExtResource("4_6bv8q")
@@ -119,75 +129,93 @@ stream = ExtResource("4_6bv8q")
 [node name="Tile1" type="Sprite2D" parent="."]
 position = Vector2(46, 103)
 texture = ExtResource("1_m4p02")
+metadata/_edit_lock_ = true
 
 [node name="Tile2" type="Sprite2D" parent="."]
 position = Vector2(119, 103)
 texture = ExtResource("2_te210")
+metadata/_edit_lock_ = true
 
 [node name="Tile3" type="Sprite2D" parent="."]
 position = Vector2(192, 103)
 texture = ExtResource("3_70v4b")
+metadata/_edit_lock_ = true
 
 [node name="Tile4" type="Sprite2D" parent="."]
 position = Vector2(265, 103)
 texture = ExtResource("4_kcut0")
+metadata/_edit_lock_ = true
 
 [node name="Tile5" type="Sprite2D" parent="."]
 position = Vector2(46, 176)
 texture = ExtResource("5_p5u1v")
+metadata/_edit_lock_ = true
 
 [node name="Tile6" type="Sprite2D" parent="."]
 position = Vector2(119, 176)
 texture = ExtResource("6_da70a")
+metadata/_edit_lock_ = true
 
 [node name="Tile7" type="Sprite2D" parent="."]
 position = Vector2(192, 176)
 texture = ExtResource("7_fhl0k")
+metadata/_edit_lock_ = true
 
 [node name="Tile8" type="Sprite2D" parent="."]
 position = Vector2(265, 176)
 texture = ExtResource("8_7jlcs")
+metadata/_edit_lock_ = true
 
 [node name="Tile9" type="Sprite2D" parent="."]
 position = Vector2(46, 249)
 texture = ExtResource("9_ml3rp")
+metadata/_edit_lock_ = true
 
 [node name="Tile10" type="Sprite2D" parent="."]
 position = Vector2(119, 249)
 texture = ExtResource("10_mrr1a")
+metadata/_edit_lock_ = true
 
 [node name="Tile11" type="Sprite2D" parent="."]
 position = Vector2(192, 249)
 texture = ExtResource("11_48pb5")
+metadata/_edit_lock_ = true
 
 [node name="Tile12" type="Sprite2D" parent="."]
 position = Vector2(265, 249)
 texture = ExtResource("12_ronjh")
+metadata/_edit_lock_ = true
 
 [node name="Tile13" type="Sprite2D" parent="."]
 position = Vector2(46, 322)
 texture = ExtResource("13_thipm")
+metadata/_edit_lock_ = true
 
 [node name="Tile14" type="Sprite2D" parent="."]
 position = Vector2(119, 322)
 texture = ExtResource("14_7o80x")
+metadata/_edit_lock_ = true
 
 [node name="Tile15" type="Sprite2D" parent="."]
 position = Vector2(192, 322)
 texture = ExtResource("15_dfg0u")
+metadata/_edit_lock_ = true
 
 [node name="Tile16" type="Sprite2D" parent="."]
 position = Vector2(264.5, 320)
 scale = Vector2(1.01563, 1.03125)
 texture = ExtResource("19_1peda")
+metadata/_edit_lock_ = true
 
 [node name="Gridlayout" type="Sprite2D" parent="."]
 position = Vector2(156, 184)
 texture = ExtResource("3_cnaku")
+metadata/_edit_lock_ = true
 
 [node name="Windowmask" type="Sprite2D" parent="."]
 position = Vector2(156, 187)
 texture = ExtResource("2_5k7f5")
+metadata/_edit_lock_ = true
 
 [node name="Click" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_6bv8q")

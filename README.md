@@ -1,18 +1,16 @@
-# BarOS Puzzle
-A fan game based on the puzzle mini-game from BarOS in Progressbar95.
+
+![splash](https://github.com/KevFR8/BarOS-Puzzle/assets/70813133/7725576d-311b-4159-8a30-8ef65855ff0e)
+# Bar OS Puzzle
+## Presentation 
+Based on the puzzle game from Bar OS system in the Progressbar 95 game, Bar OS Puzzle is a puzzle fan game
 
 ## Tools used
 - Game engine: Godot Engine 4
-- Graphic design (resize, etc.): Paint.NET
-
-## Support
-Buy the game on Steam: https://store.steampowered.com/app/1304550/Progressbar95/
 
 ## Credits
+- Developper: KevFR
 - Textures: Igor Uduslivii (alias Icoeye)
-- Idea, concept of the fan-game: KevFR
-
-
+- Composer (SFX): Gemfire
 
 
 

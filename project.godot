@@ -11,6 +11,8 @@ config_version=5
 [application]
 
 config/name="BarOS Puzzle"
+config/description="A fan game inspired from the mini-game puzzle from Progressbar95 "
+config/version="1.0"
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="uid://c22r3yvtoqi2p"
